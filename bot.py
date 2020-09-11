@@ -22,6 +22,7 @@ async def ь(ctx):
 
 #запуск бота
 token = os.environ.get('BOT_TOKEN')
+bot.run (str(token))
 
 # await ctx.message.delete ()
 
