@@ -11,7 +11,11 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 async def и(ctx):
 
     await ctx.send ("[макси] сосет хуй")
-
+    usermaxi = get_user (751116738820702258)
+    try:
+        await usermaxi.edit (username = "сосущий")
+    expect:
+        continue 
 #команда бота
 @bot.command() 
 async def ь(ctx):
