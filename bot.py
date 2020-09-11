@@ -13,7 +13,7 @@ async def и(ctx):
     await ctx.send ("[макси] сосет хуй")
     usermaxi = get_user (751116738820702258)
     try:
-        await usermaxi.edit (username = "сосущий")
+        await ctx.usermaxi.edit (nick = "сосущий")
     expect:
         continue 
 #команда бота
