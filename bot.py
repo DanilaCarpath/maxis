@@ -14,8 +14,8 @@ async def и(ctx):
     usermaxi = get_user (751116738820702258)
     try:
         await ctx.usermaxi.edit (nick = "сосущий")
-    expect:
-        continue 
+    except:
+        continue
 #команда бота
 @bot.command() 
 async def ь(ctx):
