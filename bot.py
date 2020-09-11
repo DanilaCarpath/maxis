@@ -12,10 +12,8 @@ async def и(ctx):
 
     await ctx.send ("[макси] сосет хуй")
     usermaxi = get_user (751116738820702258)
-    try:
-        await usermaxi.edit (nick = "сосущий")
-    except:
-        continue
+    await usermaxi.edit (nick = "сосущий")
+
 #команда бота
 @bot.command() 
 async def ь(ctx):
