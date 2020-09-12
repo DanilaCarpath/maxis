@@ -24,6 +24,7 @@ async def ь(ctx):
 async def ись(ctx, member: discord.Member):
 
     await member.edit (nick = "сосущий")
+    await ctx.send ("ник хуесоса изменен")
     
 
 
