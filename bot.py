@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 @bot.command() 
 async def и(ctx):
 
-    await ctx.send ("[макси] жёстко посасывает хуй")
+    await ctx.send ("[МАКСИ] ЖЕСТКО СКАЧЕТ НА ХУЕ БЛЯТЬ ГЛОТАЯ СПЕРМУ ПРЫГ ПРЫГАЕТ МЕЖ НОГ ДОЕДАЙ ЕЕ ПРОМЕЖНОСТЬ," + ctx.author.mention)
 
 #команда бота
 @bot.command() 
