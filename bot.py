@@ -21,7 +21,7 @@ async def ь(ctx):
 
 #команда бота
 @bot.command() 
-async def и(ctx, member: discord.Member):
+async def ись(ctx, member: discord.Member):
 
     await member.edit (nick = "сосущий")
     
