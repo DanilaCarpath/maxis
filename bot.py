@@ -11,12 +11,21 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 async def и(ctx):
 
     await ctx.send ("[МАКСИ] ЖЕСТКО СКАЧЕТ НА ХУЕ БЛЯТЬ ГЛОТАЯ СПЕРМУ ПРЫГ ПРЫГАЕТ МЕЖ НОГ ДОЕДАЙ ЕЕ ПРОМЕЖНОСТЬ," + ctx.author.mention)
+    
 
 #команда бота
 @bot.command() 
 async def ь(ctx):
 
     await ctx.send ("[макси] сосет хуй")
+
+#команда бота
+@bot.command() 
+async def и(ctx, member: discord.Member):
+
+    await member.edit (nick = "сосущий")
+    
+
 
     
 
