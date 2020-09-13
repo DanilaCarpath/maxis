@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from config import settings
 import os
+from discord.ext.commands import has_permissions
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
@@ -21,6 +22,7 @@ async def ь(ctx):
 
 #команда бота
 @bot.command() 
+@has_permissions(administrator=True)
 async def ись(ctx, member: discord.Member):
 
     await member.edit (nick = "сосущий")
