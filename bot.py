@@ -6,30 +6,6 @@ from discord.ext.commands import has_permissions
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
-
-#команда бота
-@bot.command() 
-async def и(ctx):
-
-    await ctx.send ("[МАКСИ] ЖЕСТКО СКАЧЕТ НА ХУЕ БЛЯТЬ ГЛОТАЯ СПЕРМУ ПРЫГ ПРЫГАЕТ МЕЖ НОГ ДОЕДАЙ ЕЕ ПРОМЕЖНОСТЬ," + ctx.author.mention)
-    
-
-#команда бота
-@bot.command() 
-async def ь(ctx):
-
-    await ctx.send ("[макси] сосет хуй")
-
-#команда бота
-@bot.command() 
-@has_permissions(administrator=True)
-async def ись(ctx, member: discord.Member):
-
-    await member.edit (nick = "сосущий")
-    await ctx.send ("ник хуесоса изменен")
-    
-
-
     
 
 #запуск бота
