@@ -7,6 +7,7 @@ from discord.ext.commands import has_permissions, MissingPermissions
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
+@bot.command() 
 async def илох (ctx):
     
     member = ctx.guild.get_member(764136341486698516)
