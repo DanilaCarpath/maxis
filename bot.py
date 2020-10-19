@@ -4,12 +4,21 @@ from config import settings
 import os
 import random
 from discord.ext.commands import has_permissions, MissingPermissions
-from discord_webhook import DiscordWebhook
+import requests
+import discord
+from discord import Webhook, RequestsWebhookAdapter, File
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
 @bot.event 
 async def on_message(message):
+      
+	
+ 
+	# Create webhook
+	webhook = Webhook.partial(767711039767707661, NfQYdqQspoK-_Xe3VVjiCnx1JNeO1EMX_TOOci37ATskQ7Z40KB_UfUhjorjKWrN5Skm)
+
+	webhook.send("ddsfdfg")
           
     
 #         avatar = message.author.avatar_url
@@ -21,8 +30,7 @@ async def on_message(message):
 #         channel = discord.utils.get (tempguild.channels, name = "international")
     
     
-    webhook = DiscordWebhook(url='https://discordapp.com/api/webhooks/767711039767707661/NfQYdqQspoK-_Xe3VVjiCnx1JNeO1EMX_TOOci37ATskQ7Z40KB_UfUhjorjKWrN5Skm', content='fffff')
-    webhook.execute()    
+    
 
         
 token = os.environ.get('BOT_TOKEN')
