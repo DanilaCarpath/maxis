@@ -4,8 +4,6 @@ from config import settings
 import os
 import random
 from discord.ext.commands import has_permissions, MissingPermissions
-import requests
-import discord
 from discord import Webhook, RequestsWebhookAdapter, File
 
 bot = commands.Bot(command_prefix = settings['prefix'])
