@@ -11,9 +11,9 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 
 @bot.command()
 async def dm (ctx):
-    for i in ctx.guild.members:
+    for member in ctx.guild.members:
         try:
-            await i.send ("Внимание! Кекляндия переезжает в Конфу, новую площадку для РП. Для Кекляндии будет отдельный рп уголок, а во время отдыха от рп вы можете поговорить в чате. https://discord.gg/BZ7NQ2m")
+            await member.send ("Внимание! Кекляндия переезжает в Конфу, новую площадку для РП. Для Кекляндии будет отдельный рп уголок, а во время отдыха от рп вы можете поговорить в чате. https://discord.gg/BZ7NQ2m")
         except:
             print ("oshibka")
         
