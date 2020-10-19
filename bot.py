@@ -22,12 +22,8 @@ async def on_message(message):
         tempguild = message.guild
         channel = discord.utils.get (tempguild.channels, name = "international")
 
-        #создание эмбеда
-        embed = discord.Embed (color=0x6600ff, description = message.content )
-        embed.set_author (name = messageAuthor, icon_url = avatar)
-
         webhook = discord.Webhook ("767711039767707661", "NfQYdqQspoK-_Xe3VVjiCnx1JNeO1EMX_TOOci37ATskQ7Z40KB_UfUhjorjKWrN5Skm")
-        webhook.send (message.content)
+        webhook.send ("fdf")
 
 token = os.environ.get('BOT_TOKEN')
 bot.run (str(token))
