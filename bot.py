@@ -91,7 +91,7 @@ async def on_message(message):
 
     if "sendwebhook" in message.content:
         webhook = discord.Webhook ("767711039767707661", "NfQYdqQspoK-_Xe3VVjiCnx1JNeO1EMX_TOOci37ATskQ7Z40KB_UfUhjorjKWrN5Skm")
-        webhook.send ("odgll")
+        await webhook.send ("odgll")
 
 token = os.environ.get('BOT_TOKEN')
 bot.run (str(token))
