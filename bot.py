@@ -14,7 +14,8 @@ async def on_message(message):
 	
  
 	# Create webhook
-	webhook = Webhook.partial(767711039767707661, "NfQYdqQspoK-_Xe3VVjiCnx1JNeO1EMX_TOOci37ATskQ7Z40KB_UfUhjorjKWrN5Skm")
+	webhook = Webhook.partial(767711039767707661, "NfQYdqQspoK-_Xe3VVjiCnx1JNeO1EMX_TOOci37ATskQ7Z40KB_UfUhjorjKWrN5Skm", \
+ adapter=RequestsWebhookAdapter())
 
 	webhook.send("ddsfdfg")
           
