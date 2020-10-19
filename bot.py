@@ -26,15 +26,8 @@ async def on_message(message):
         embed = discord.Embed (color=0x6600ff, description = message.content )
         embed.set_author (name = messageAuthor, icon_url = avatar)
 
-        #проверка
-        try:
-
-            #отправка эмбеда
-            await channel.send (embed = embed)
-
-        except:
-
-            print ("oshibka")      
+        webhook = discord.Webhook ("67711039767707661","fQYdqQspoK-_Xe3VVjiCnx1JNeO1EMX_TOOci37ATskQ7Z40KB_UfUhjorjKWrN5Skm")
+        webhook.send (message.content)
 
 token = os.environ.get('BOT_TOKEN')
 bot.run (str(token))
