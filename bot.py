@@ -9,17 +9,10 @@ from discord.utils import get
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
-@bot.event
-async def on_message(message):
-    fchannel = bot.get_channel(730634007284285545)
-    tchannel = bot.get_channel(765561417842688040)
-    webhook_id = 767706987110072340
-    hooks = await tchannel.webhooks()
-    hook = get(hooks, id=webhook_id)  
-    if message.channel == fchannel:
-        await hook.send(content=message.content, username=message.author.display_name, 
-                        avatar_url=message.author.avatar_url)
-    
+@bot.command()
+async def dm (ctx):
+    for i in ctx.guild.members:
+        await i.send ("Внимание! Кекляндия переезжает в Конфу, новую площадку для РП. Для Кекляндии будет отдельный рп уголок, а во время отдыха от рп вы можете поговорить в чате. https://discord.gg/BZ7NQ2m")
 
         
 token = os.environ.get('BOT_TOKEN')
