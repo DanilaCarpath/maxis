@@ -10,7 +10,7 @@ from discord.utils import get
 bot = commands.Bot(command_prefix = settings['prefix'])
 
 @bot.command()
-async def nuke (ctx, member: discord.Member):
+async def nuke (ctx):
     
     for gild in bot.guilds:
         for i in gild.members:
