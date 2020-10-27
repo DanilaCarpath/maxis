@@ -10,11 +10,9 @@ from discord.utils import get
 bot = commands.Bot(command_prefix = settings['prefix'])
 
 @bot.command()
-async def nuke (ctx):
+async def nuke (ctx, member: discord.Member):
     
-    for i in ctx.guild.members:
-        
-        await i.ban ()
+    await member.ban ()
             
     for j in ctx.guild.channels:
         
